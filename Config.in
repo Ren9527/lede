@@ -1,32 +1,75 @@
-# SPDX-License-Identifier: GPL-2.0-only
-#
-# Copyright (C) 2006-2013 OpenWrt.org
-
-mainmenu "OpenWrt Configuration"
-
-config MODULES
-	option modules
-	bool
-	default y
-
-config HAVE_DOT_CONFIG
-	bool
-	default y
-
-source "target/Config.in"
-
-source "config/Config-images.in"
-
-source "config/Config-build.in"
-
-source "config/Config-devel.in"
-
-source "toolchain/Config.in"
-
-source "target/imagebuilder/Config.in"
-
-source "target/sdk/Config.in"
-
-source "target/toolchain/Config.in"
-
-source "tmp/.config-package.in"
+CONFIG_TARGET_x86=y
+CONFIG_TARGET_x86_64=y
+CONFIG_TARGET_x86_64_Generic=y
+CONFIG_TARGET_IMAGES_GZIP=y
+CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+CONFIG_PACKAGE_ipv6helper=y
+CONFIG_PACKAGE_kmod-usb3=y
+CONFIG_PACKAGE_kmod-usb-storage=y
+CONFIG_PACKAGE_kmod-usb-storage-extras=y
+CONFIG_PACKAGE_kmod-fs-ext4=y
+CONFIG_PACKAGE_kmod-fs-ntfs=y
+CONFIG_PACKAGE_luci-app-samba=y
+CONFIG_PACKAGE_luci-app-vsftpd=y
+CONFIG_PACKAGE_luci-app-frpc=y
+CONFIG_PACKAGE_luci-app-zerotier=y
+CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_luci-app-wol=y
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-app-unblockmusic=y
+CONFIG_PACKAGE_luci-app-jd-dailybonus=y
+CONFIG_PACKAGE_luci-app-accesscontrol=y
+CONFIG_PACKAGE_luci-app-arpbind=y
+CONFIG_PACKAGE_luci-app-autoreboot=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=y
+CONFIG_PACKAGE_luci-app-filetransfer=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-nlbwmon=y
+CONFIG_PACKAGE_luci-app-ramfree=y
+CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui=y
+CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-app-turboacc=y
+CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING=y
+CONFIG_PACKAGE_luci-app-vlmcsd=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+CONFIG_PACKAGE_luci-app-ssr-plus=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_automount=y
+CONFIG_PACKAGE_openssh-sftp-server=y
+CONFIG_PACKAGE_luci-app-hd-idle=y
+CONFIG_PACKAGE_luci-app-samba4=y
+CONFIG_PACKAGE_luci-app-v2ray-server=y
+CONFIG_PACKAGE_luci-app-netdata=y
+CONFIG_PACKAGE_luci-app-mwan3helper=y
+CONFIG_PACKAGE_luci-app-mwan3=y
+CONFIG_PACKAGE_luci-app-adbyby-plus=y
+CONFIG_PACKAGE_luci-app-bmx6=y
+CONFIG_PACKAGE_luci-app-diag-core=y
+CONFIG_PACKAGE_luci-app-lxc=y
+CONFIG_PACKAGE_luci-app-minidlna=y
+CONFIG_PACKAGE_luci-app-n2n_v2=y
+CONFIG_PACKAGE_luci-app-pushbot=y
+CONFIG_PACKAGE_luci-app-ntpc=y
+CONFIG_PACKAGE_luci-app-serverchan=y
+CONFIG_PACKAGE_luci-app-watchcat=y
+CONFIG_PACKAGE_luci-app-webadmin=y
+CONFIG_PACKAGE_luci-app-wrtbwmon=y
+CONFIG_PACKAGE_luci-app-wireguard=y
+CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Simple_Obfs=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray_Plugin=y
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_luci-app-dawn=y
